@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Travel Form</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+   <img class="nstuu" src="nstuu.jpg" alt="NSTU Trip">
+    <div class="container">
+        <h1>Welocome to NSTU Trip form</h1>
+        <p>Enter your details and submit this form to confirm your participation 
+        </p> 
+        <form action="travel.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text"  name="age" id="age" placeholder="Enter your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
+            <input type="text" name="dept" id="dept" placeholder="Enter your dept name">
+            <textarea name="other" id="other" cols="30" rows="10" placeholder="Enter your opinion"></textarea> 
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+    </div>
+    <script src="travel.js"></script>
+</body>
+</html>
+<!--INSERT INTO `form` (`s_no`, `name`, `age`, `gender`, `email`, `phone`, `dept`, `other`, `dt`) VALUES ('1', 'textname', '23', 'female', 'tina@gmail.com', '6563456', 'Food Science', 'This is my first ever trip', current_timestamp());-->
